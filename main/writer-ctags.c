@@ -512,7 +512,9 @@ static void checkCtagsOptions (tagWriter *writer CTAGS_ATTR_UNUSED,
 			   getFieldName (FIELD_SCOPE_KEY));
 		enableField (FIELD_SCOPE, true);
 	}
-
+	
+	enableField(FIELD_INHERITANCE, true);
+	
 	for (int i = 0; i < ARRAY_SIZE (fixedFields); i++)
 	{
 		if (!isFieldEnabled (fixedFields [i]))
